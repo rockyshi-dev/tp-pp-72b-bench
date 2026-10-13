@@ -1,0 +1,6 @@
+response_penalty_default.json: one gate E response (a 1,536-token prompt, 128 tokens, temperature 0,
+top_logprobs 5, return_tokens_as_token_ids) from vLLM 0.30.0 serving Qwen2.5-72B-Instruct with TP8,
+sent WITHOUT repetition_penalty, so the model's generation_config default of 1.05 applied.
+Reduced to choices[0].index/finish_reason/logprobs.content[].token/logprob/top_logprobs[].token/logprob
+and usage.completion_tokens; values unchanged. It shows why gate E sends repetition_penalty 1.0: at
+position 3 the emitted token is below its own top raw logprob.

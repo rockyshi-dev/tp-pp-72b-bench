@@ -1,0 +1,3 @@
+Read-only copies of /proc/zoneinfo (zoneinfo.txt), /sys/devices/system/node/node{0,1}/meminfo
+(node0_meminfo.txt, node1_meminfo.txt) and /proc/vmstat (vmstat.txt) of a two-socket
+Linux 5.15 machine (zone_reclaim_mode 0) with a large page cache. Test fixtures for hostmem.py.
